@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTITUTE FINDER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        *{
+            margin:auto;
+            padding:0px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar-brand{
+            font-size: 40px; 
+    
+        }
+        .nav-item{
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar{
+            background: linear-gradient(to right,red,yellow);
+            text-transform: uppercase;
+        }
+        .carousel{
+            margin:10px;
+        }
+        .card img{
+            height: 200px;
+        }
+        .container h1{
+          font-size: 80px;
+          text-decoration: underline;
+        }
+        .container h4{
+          font-size: 50px;
+          text-decoration: underline;
+        }
+        .container p{
+          font-size: 30px;
+        }
+        .container{
+          background-color:darksalmon;
+          padding-bottom:5px;
+        }
+        .container form{
+          margin-right: 200px;
+        }
+        .footer{
+          background-color:fuchsia;
+          color:black;
+          padding: 10px;
+          font-weight:bolder;
+        }
+        .color{
+          background-color:deeppink;
+          text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">INSTITUTE FINDER</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#courses">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="#about">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--carousel-->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="appdevep.png" class="d-block w-100" alt="..." style="width: 400px;height: 400px;">
+          </div>
+          <div class="carousel-item">
+            <img src="webdevelopment.jpg" class="d-block w-100" alt="..." style="width: 400px;height: 400px;">
+          </div>
+          <div class="carousel-item">
+            <img src="cloudcomputing.webp" class="d-block w-100" alt="..." style="width: 400px;height: 400px;">
+          </div>
+          <div class="carousel-item">
+            <img src="Embeddeddevelopment.jpg" class="d-block w-100" alt="..." style="width: 400px;height: 400px;">
+          </div>
+          <div class="carousel-item">
+            <img src="ethicalhacking.jpg" class="d-block w-100" alt="..." style="width: 400px;height: 400px;">
+          </div>
+          <div class="carousel-item">
+            <img src="industrialauto.jpg" class="d-block w-100" alt="..." style="width: 400px;height: 400px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <!--cards-->
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="courses">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="app-development1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">APP DEVELOPMENT</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="appdevelopment.html" class="btn btn-primary">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="webdevep1.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">WEB DEVELOPMENT</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="webdevep.html" class="btn btn-primary">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="cloudcomp.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CLOUD COMPUTING</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="cloudcomputing.html" class="btn btn-primary">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="embedded.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">EMBEDDED SYSTEMS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="embeddedsystems.html" class="btn btn-primary">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="hacking.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ETHICAL HACKING</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="ethicalhacking.html" class="btn btn-primary">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="automation.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">INDUSTRIAL AUTOMATON</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="industrialautomation.html" class="btn btn-primary">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!--services code-->
+      <div class="container" id="services">
+        <h1>OUR SERVICES</h1>
+        <h4>WHAT DO WE DO...</h4>
+        <p>We are here to provide our services for the aspirants who are willing to join in a institute and develop the technicals skills,to persue their career in their respective fields.</p>
+        <p>Our main motive is to showcase the best institute for the aspirants and help them by knowing which one is the great and also it should be nearby for their accessability.</p>
+        <p>This platform is completely free.</p>
+      </div>
+      <br>
+      <!--contact code-->
+      <div class="container" id="contact">
+        <h1>CONTACT US THROUGH EMAIL</h1>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Textarea</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+        <h2>OTHER SOCIAL MEDIAS FOR CONTACT</h2>
+        <ul>
+          <li>Whatsapp- 4444 6666</li>
+          <li>Facebook- institutefinder</li>
+          <li>Instagram- _institute_finder_</li>
+        </ul>
+      </div>
+      <br>
+      <!--About-->
+      <div class="footer" id="about">
+        <h1>ABOUT</h1>
+        <p>We are here to provide our services for the aspirants who are willing to join in a institute and develop the technicals skills,to persue their career in their respective fields.</p>
+        <p>Our main motive is to showcase the best institute for the aspirants and help them by knowing which one is the great and also it should be nearby for their accessability.</p>
+        <p>We expect our viewers to get right education from the right institutes through our website.</p>
+        <p>This platform is completely free.</p>
+        <p class="color">SINCE 2015 INSTITUTEFINDER</p>
+     </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
